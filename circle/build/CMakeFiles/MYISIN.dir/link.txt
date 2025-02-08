@@ -1,0 +1,3 @@
+D:\VSCode\cmake-3.31.4-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\MYISIN.dir/objects.a
+"D:\VSCode\x86_64-8.1.0-release-posix-seh-rt_v6-rev0 2\mingw64\bin\ar.exe" qc CMakeFiles\MYISIN.dir/objects.a @CMakeFiles\MYISIN.dir\objects1.rsp
+"D:\VSCode\x86_64-8.1.0-release-posix-seh-rt_v6-rev0 2\mingw64\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\MYISIN.dir/objects.a -Wl,--no-whole-archive -o MYISIN.exe -Wl,--out-implib,libMYISIN.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MYISIN.dir\linkLibs.rsp

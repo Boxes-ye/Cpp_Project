@@ -1,0 +1,3 @@
+D:/VSCode/code/thesecond/friend/build/CMakeFiles/my_main.dir
+D:/VSCode/code/thesecond/friend/build/CMakeFiles/edit_cache.dir
+D:/VSCode/code/thesecond/friend/build/CMakeFiles/rebuild_cache.dir

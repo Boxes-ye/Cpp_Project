@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/VSCode/code/thesecond/friend/build",
+  "command": "\"D:\\VSCode\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0 2\\mingw64\\bin\\g++.exe\"   -g -o CMakeFiles\\my_main.dir\\main.cpp.obj -c D:\\VSCode\\code\\thesecond\\friend\\main.cpp",
+  "file": "D:/VSCode/code/thesecond/friend/main.cpp",
+  "output": "CMakeFiles/my_main.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/VSCode/code/thesecond/friend/build",
+  "command": "\"D:\\VSCode\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0 2\\mingw64\\bin\\g++.exe\"   -g -o CMakeFiles\\my_main.dir\\building.cpp.obj -c D:\\VSCode\\code\\thesecond\\friend\\building.cpp",
+  "file": "D:/VSCode/code/thesecond/friend/building.cpp",
+  "output": "CMakeFiles/my_main.dir/building.cpp.obj"
+}
+]

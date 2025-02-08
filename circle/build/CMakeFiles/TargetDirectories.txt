@@ -1,0 +1,3 @@
+D:/VSCode/code/thesecond/build/CMakeFiles/MYISIN.dir
+D:/VSCode/code/thesecond/build/CMakeFiles/edit_cache.dir
+D:/VSCode/code/thesecond/build/CMakeFiles/rebuild_cache.dir
