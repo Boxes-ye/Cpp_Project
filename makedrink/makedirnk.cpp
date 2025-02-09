@@ -19,6 +19,7 @@ int RandomInt(int min, int max)
                                                       dist：一个分布对象（如 uniform_int_distribution<int>），负责将原始随机数映射到指定范围内。*/
 }
 // make drink
+//当每个子函数都需要重写内容可以写纯虚函数virtual void MakeDrink()=0；此时子函数必须重写
 class AbstractMakeDrink
 {
 public:
@@ -29,6 +30,7 @@ public:
         Brewing();
         FillCup();
     }
+    } //先写好制作流程
 
 protected:
     virtual void Boiling()
@@ -51,6 +53,7 @@ protected:
         amount = getRequiredGrams();
         std::cout << "Using " << amount << "g " << getMaterialName() << "\n";
     }
+    } //抽象的虚函数
 
     virtual void FillCup()
     {
@@ -61,12 +64,15 @@ protected:
 };
 
 class Tea : public AbstractMakeDrink
+class Tea : public AbstractMakeDrink //多态
 {
 protected:
     std::string getMaterialName() const override { return "tea"; }
     int getRequiredGrams() const override { return 30; }
 };
 
+}; // Brewing不是纯虚函数，所以只需要重写 getMaterialName()和getRequiredGrams()
+// override 是 C++11 引入的一个关键字，用来标明该成员函数是 重写（override） 基类的虚函数。
 class Coffee : public AbstractMakeDrink
 {
 protected:
@@ -74,13 +80,18 @@ protected:
     int getRequiredGrams() const override { return 30; }
 };
 void prepareDrink(std::unique_ptr<AbstractMakeDrink> drink)
+void prepareDrink(std::unique_ptr<AbstractMakeDrink> drink) /*memory库中提供的智能指针
+ 具有所有权和自动销毁功能*/
 {
     drink->MakeDrink();
+    drink->MakeDrink(); //指针指向MakeDrink实现的功能
 }
 
 int main()
 {
     prepareDrink(std::make_unique<Coffee>());
+    prepareDrink(std::make_unique<Coffee>()); /*创建一个 std::unique_ptr，并且自动初始化一个指定类型的对象
+     创建了一个指向 Coffee 类型的智能指针 std::unique_ptr<Coffee>*/
     prepareDrink(std::make_unique<Tea>());
     return 0;
 }
