@@ -31,7 +31,6 @@ public:
         FillCup();
     }
     } //先写好制作流程
-
 protected:
     virtual void Boiling()
     {
