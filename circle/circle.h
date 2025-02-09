@@ -1,13 +1,15 @@
 #pragma once
-#include<iostream>
+#include <iostream>
 using namespace std;
-#include"point.h"
+#include "point.h"
+
 class Circle
 {
 private:
 	double m_r;
-	
-    point m_center;
+
+	point m_center;
+
 public:
 	//设置半径
 	void setr(double r);
@@ -18,6 +20,5 @@ public:
 	void setcenter(point center);
 	//获取圆心
 	point getcenter();
-
 };
 //判断点和圆关系
