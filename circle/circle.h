@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 #include "point.h"
-
+//圆类声明
 class Circle
 {
 private:
