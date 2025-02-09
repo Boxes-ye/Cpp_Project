@@ -2,7 +2,7 @@
 #include <string>
 #include <random> // 随机数库核心头文件
 #include <chrono> // 用于获取时间戳(无法正确生成随机数的时候)
-#include <memory>
+#include <memory> //引入 智能指针 和 内存管理 相关的功能
 
 int RandomInt(int min, int max)
 {
@@ -16,7 +16,7 @@ int RandomInt(int min, int max)
 
     std::uniform_int_distribution<int> dist(min, max); // uniform_int_distribution：整数均匀分布
     return dist(engine);                               /*通过分布对象将引擎生成的原始随机数转换为符合要求的数值。
-                                   dist：一个分布对象（如 uniform_int_distribution<int>），负责将原始随机数映射到指定范围内。*/
+                                                      dist：一个分布对象（如 uniform_int_distribution<int>），负责将原始随机数映射到指定范围内。*/
 }
 // make drink
 class AbstractMakeDrink
