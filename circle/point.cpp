@@ -1,5 +1,5 @@
 #include "point.h"
-
+//点类的定义
 void point::setX(int x)
 {
     m_x = x;
