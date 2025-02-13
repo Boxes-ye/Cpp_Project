@@ -1,3 +1,4 @@
+//利用多态、分文件、派生子类实现不同厂商电脑组装流程
 #include <iostream>
 #include <memory>
 
